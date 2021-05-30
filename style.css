@@ -68,9 +68,10 @@ ul li a:hover {
 
 .head-content {
   text-align: center;
+  margin-top: 5%;
 }
 .head-content img {
-  border-radius: 40%;
+  border-radius: 20%;
   border: 3px solid #fff;
   margin-top: 100px;
   width: 350px;
@@ -81,6 +82,19 @@ ul li a:hover {
   font-size: 3em;
   font-family: Algerian;
   color: #fff;
+}
+.animation-h5{
+  animation: fadeIn 1s ease;
+}
+@keyframes fadeIn{
+ from{
+  transform: scale(3);
+  opacity: 0;
+ } 
+ to{
+  transform: scale(1);
+  opacity: 0;
+ }
 }
 
 img {
@@ -351,7 +365,7 @@ h3 {
   display: none;
 } */
 
-@media (max-width: 800px) {
+@media (max-width: 700px) {
   .menu-btn {
     display: block;
     z-index: 10;
@@ -373,8 +387,4 @@ h3 {
   .mainmenu.show {
     display: flex;
   }
-  .mainmenu li {
-    font-size: 2rem;
-    margin-top: 30px;
-  }
-}
+ }
